@@ -20,6 +20,7 @@
          <div class="container-fluid">
             <div class="header-content">
                <div class="brand">
+                  <!-- <img src="https://komarev.com/ghpvc/?username=senthilkumarraja&label=Portfolio%20Views&color=blue&style=flat" alt="portfolio views" /> -->
                   <div class="avatar">SK</div>
                   <div class="brand-info">
                      <h1>Hello, I'm Senthilkumar R</h1>
@@ -346,10 +347,7 @@
                   
                   <div class="project-content">
                      <div class="" style="display: flex; align-items: center; justify-content: space-between;">
-                        <h3>Healthcare Application </h3>
-                        <div class="sub-head-badge">
-                           <span class="">Healthcare Technology • B2B SaaS • Process Automation</span>
-                        </div> 
+                        <h3>Healthcare Application </h3> 
                      </div>
                      <p class="project-description">As part of this project, I contributed to redesigning and developing a <strong> user-centered, responsive web application</strong>. This project showcased how <strong> modern UI/UX principles and responsive front-end development </strong> can directly support healthcare providers in delivering exceptional care while maintaining operational excellence. </p>
                      <div class="tech-stack">
@@ -370,6 +368,36 @@
                         <img src="assets/img/healthcare/login.png" alt="Shipment Preview">
                      </div>
                   </div>
+               </div>
+               <!-- Healthcare application -->
+
+
+                <!-- CRM Web App -->
+               <div class="card project-card">
+                  <div class="gallery" data-gallery="challenges">
+                     <div class="img-card">
+                        <img src="assets/img/crm/main-preview.png" alt="Shipment Preview">
+                     </div>
+                  </div>
+                  <div class="project-content">
+                     <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                        <h3> CRM Application – Shipping & Logistics   </h3> 
+                     </div>
+                     <p class="project-description">Make shipping faster, easier, and more cost-effective for businesses of all sizes. This software streamlines the entire shipping process—from comparing carrier rates to tracking deliveries—so you can focus on growing your business.</p>
+                     <div class="tech-stack">
+                        <span class="tech-tag"> HTML/CSS </span>
+                        <span class="tech-tag"> Javascript </span>
+                        <span class="tech-tag"> Bootstrap </span>
+                        <span class="tech-tag"> Responsive Design </span>
+                        <span class="tech-tag"> User-Centered-Design </span>
+                        <span class="tech-tag"> UX Research </span>
+                        <span class="tech-tag"> React.js </span>
+                     </div>
+                     <button class="btn btn-primary" onclick="openModal('crm-project')">
+                        View Project Details →
+                     </button>
+                  </div>
+                  
                </div>
                <!-- Healthcare application -->
 
@@ -682,7 +710,7 @@
                <div class="modal-section" data-section="4" data-title="Wireframing & High-Fidelity Mockups">
                   <div class=" project-card ">
                       
-                     <div class="project-content">
+                     <div class="project-content" style="width: 100%;">
                         <h3> Figma Works </h3>
                         <p style="margin-bottom: 1rem;"> Started with wireframes to validate layouts and flows with stakeholders. Based on feedback, we refined the <strong> design into high-fidelity mockups </strong> in Figma that demonstrated: </p>
                         <div class="notes-container">
@@ -756,7 +784,177 @@
       </div>
       <!-- snaphealthcare Modal -->
 
-      
+      <!-- shipping logistics Modal -->
+      <div id="crm-project" class="modal">
+         <div class="modal-content wizard" data-wizard="crm">
+            <div class="modal-header">
+               <h2 class="modal-title">
+                  <!-- <span id="currentStep">Step 1</span> of 5: <span id="stepTitle">Project Overview</span> -->
+                  <span id="currentStep-crm">Step 1</span> - <span id="stepTitle-crm"></span>
+               </h2>
+               <button class="modal-close" onclick="closeModal('crm-project')">&times;</button>
+            </div> 
+            <div class="modal-body" id="wizardSteps-crm">
+               <!-- Step 1: Project Overview -->
+               <div class="modal-section active" data-section="1" data-title="Project Overview">
+                  <h3>About the Application</h3>
+                  <ul class="styled-list">
+                     <li class="fade-item"> <strong> Multi-Carrier Shipping Integration:</strong> Get the best rates & automate shipping with FedEx, UPS, DHL, USPS, and more. </li>
+                     <li class="fade-item"> <strong> Smart Automation:</strong> Reduce manual work with batch processing & AI-driven shipping rules. </li>
+                     <li class="fade-item"> <strong> Seamless eCommerce Integrations:</strong> Connect with Shopify, Amazon, WooCommerce, and more. </li>
+                  </ul>
+                  <div class="notes-container" style="margin-top: 2rem;">
+                     <div class="note" style="min-width: 400px;">
+                        The CRM application was designed to streamline operations for <strong> shipping and logistics </strong> companies by centralizing customer management, shipment workflows, and carrier integrations into one scalable platform. It replaced fragmented tools and manual processes with a <strong> user-centered, responsive </strong> solution tailored to logistics needs.
+                     </div>
+                  </div>
+               </div>
+               <!-- Step 2: Challenges -->
+               <div class="modal-section" data-section="2" data-title="Challenges & Critical Pain Points">
+                  <h3>UI & Functionality Audit</h3>
+                  <p style="margin-bottom: 1rem;"> Through a detailed UX audit and user feedback, we identified critical pain points: </p>
+                  <div class="notes-container" >
+                     <div class="note highlight">
+                        <h4> Manual Carriers & Custom Rate Sheets </h4>
+                        <p>
+                           If a business operates its own <strong>local delivery service</strong>, 
+                           they can create a custom carrier inside the CRM, 
+                           upload <strong>rate sheets</strong> (based on distance or package size), 
+                           and use them seamlessly for <strong>quoting and invoicing</strong>. 
+                           This flexibility ensures every business can adapt the CRM to its unique logistics model.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="notes-container">
+                     <div class="note">
+                        No option for <strong>  dynamic selling price customization </strong>.
+                     </div>
+                     <div class="note">
+                        Limited or no <strong> carrier API integration </strong> for real-time updates.
+                     </div>
+                     <div class="note">
+                        Missing standardized <strong> invoice PDFs and branded email templates </strong>.
+                     </div>
+                     <div class="note">
+                        Static layouts with no flexibility for dynamic pages <strong>  (rates, shipments, detail views) </strong>.
+                     </div>
+                     <div class="note">
+                        Lack of <strong> automated workflows </strong> and step-by-step processes.
+                     </div>
+                     <div class="note">
+                        Data tables were cluttered, missing views like <strong> Kanban, calendar, or split view for usability </strong>.
+                     </div>
+                  </div>
+                   
+                  
+               </div>
+               <!-- Step 3: Solutions -->
+               <div class="modal-section" data-section="3" data-title="Solutions & Improvements">
+                   
+                  <div class=" project-card ">
+                     
+                     <div class="project-content">
+                        <h3>Goal & Design Direction</h3>
+                        <p style="margin-bottom: 1rem;"> Our design strategy focused on <strong> usability, automation, and scalability </strong>, ensuring the platform could support both current needs and future enhancements. </p>
+                        <div class="notes-container">
+                           <div class="note"> Apply <strong> user-centered design principles </strong> to simplify daily workflows. </div>
+                           <div class="note"> Provide flexible <strong> ayouts (list, Kanban, split, and calendar views) for better data visualization </strong>. </div>
+                           <div class="note"> Integrate carrier <strong> APIs for real-time shipment and pricing data </strong>. </div>
+                           <div class="note"> Automate invoice generation and notifications. </div>
+                           <div class="note"> Build <strong>  dynamic pages </strong> configurable per company requirements. </div>
+                           <div class="note"> Ensure responsiveness using <strong> Bootstrap RWD and modern UI patterns </strong>. </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Step 4: Wireframe -->
+               <div class="modal-section" data-section="4" data-title="High-Fidelity & Front-End Builds">
+                  <div class=" project-card ">
+                      
+                     <div class="project-content"  style="width: 100%;">
+                        <h3> Design Phase </h3>
+                         
+                        <div class="notes-container">
+                           <div class="note"> <strong>  High-Fidelity Designs:</strong> Created initial screen mockups in <strong> Photoshop to validate flows</strong>. </div>
+                            
+                           <div class="note"> After initial approvals, most features were implemented directly using: <strong>  HTML / CSS / JavaScript Bootstrap (latest version)</strong> for responsive layouts React.js for scalable and dynamic front-end
+                           </div>
+                            
+                        </div>
+                        <!-- <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;">
+                           <div class="img-card">
+                              <img src="assets/img/crm/mock-1.png" alt="Preview 1">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/crm/mock-2.png" alt="Preview 2">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/shipping-logistics/HFD-ViewShipment.jpg" alt="Preview 3">
+                           </div>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+                
+               <!-- Step 5: Results -->
+               <div class="modal-section" data-section="5" data-title="Key Results & Impact">
+                  <div class=" project-card ">
+                     <div class="project-content">
+                        <h3> Results & Conclusion </h3>
+                        <div class="notes-container">
+                           <div class="note">
+                              <ul>
+                                 <li> Modern CRM tailored for logistics </li>
+                                 <li> Automated workflows cut manual effort </li>
+                                 <li> Real-time updates via carrier API </li>
+                                 <li> Flexible views: Kanban, list, split, calendar </li>
+                                 <li> Boosted efficiency & client satisfaction</li>                                 
+                              </ul>   
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project-content" style="width: 100%;">
+                        <h3> My Contribution </h3>
+                        <div class="notes-container">
+                           <div class="note"> Designed initial <strong>  high-fidelity mockups in Photoshop </strong> based on company requirements. </div>
+                           <div class="note"> Developed <strong> HTML/CSS/JavaScript layouts with Bootstrap RWD. </strong> </div>
+                           <div class="note"> Designed optimized <strong> shipment & tracking workflows.</strong> </div>
+                           <div class="note"> Created dynamic screens <strong> (shipments, rates, detail views) </strong> with reusable front-end structures. </div> 
+                        </div>
+                        <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;">
+                           <div class="img-card">
+                              <img src="assets/img/crm/final-1.png" alt="Flexible views">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/crm/final-2.png" alt="Automated workflows">
+                           </div> 
+                        </div>
+                        <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;"> 
+                           <div class="img-card">
+                              <img src="assets/img/crm/final-3.png" alt="updates via carrier">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/crm/login.png" alt="Login">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Wizard Navigation -->
+            <div class="wizard-navigation wizard-footer"> 
+               <div class="wizard-buttons">
+                  <button class="wizard-btn wizard-btn-prev" id="prevBtn-crm" onclick="previousStep('crm')">
+                  ← Previous
+                  </button>
+                  <button class="wizard-btn wizard-btn-next" onclick="nextStep('crm')" id="nextBtn-crm">
+                  Next →
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- shipping logistics Modal -->
 
       <!-- Lightbox Modal -->
       <div id="lightbox" class="lightbox">
