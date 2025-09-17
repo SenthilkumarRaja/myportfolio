@@ -207,3 +207,20 @@ const moon = `<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xm
          if (e.key === 'Escape') closeLightbox();
       }
    });
+
+
+   // tab functionality
+   document.querySelectorAll('.tab-btn').forEach(tab => {
+   tab.addEventListener('click', () => {
+      // Remove active class from all tabs and panels
+      document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.project-panel').forEach(p => p.classList.remove('active'));
+      
+      // Add active class to clicked tab
+      tab.classList.add('active');
+      
+      // Show corresponding project panel
+      const tabId = tab.getAttribute('data-tab');
+      document.getElementById(tabId).classList.add('active');
+   });
+   });

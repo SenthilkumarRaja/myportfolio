@@ -308,98 +308,189 @@
             
             
             <section id="projects" class="section">
+               
                <div class="section-header">
                   <h2 class="section-title">Featured Projects</h2>
                   <p class="section-subtitle">Showcasing end-to-end UI/UX work from concept to implementation, demonstrating expertise in user-centered design and modern web technologies.</p>
                </div>
 
-               <!-- shipping & logistics application -->
-               <div class="card project-card">
-                  <div class="gallery" data-gallery="challenges">
-                     <div class="img-card">
-                        <img src="assets/img/shipping-logistics/sample-1.png" alt="Shipment Preview">
-                     </div>
-                  </div>
-                  <div class="project-content">
-                     <h3>Shipping & Logistics Application Redesign</h3> 
-                     <p class="project-description">Complete platform redesign for Canadian <strong> shipping and logistics </strong> company. Implemented <strong> user-centered design methodology</strong>, rebuilt the entire <strong> UI/UX </strong> from scratch, and significantly improved <strong> experience and performance</strong>.</p>
-                     <div class="tech-stack">
 
-                        <span class="tech-tag"> HTML/CSS </span>
-                        <span class="tech-tag"> Javascript </span>
-                        <span class="tech-tag"> Bootstrap </span>
-                        <span class="tech-tag"> Responsive Design </span>
-                        <span class="tech-tag"> User-Centered-Design </span>
-                        <span class="tech-tag"> UX Research </span>
-                        <span class="tech-tag"> PHP (Laravel) </span>
-                        <span class="tech-tag"> Java </span>
 
-                     </div>
-                     <button class="btn btn-primary" onclick="openModal('sl-project')">
-                     View Project Details →
-                     </button>
-                  </div>
+               <div class="tabs">
+                  <button class="tab-btn active" data-tab="w-App"> Web Application </button>
+                  <button class="tab-btn" data-tab="m-App"> Mobile App </button>
+                  <button class="tab-btn" data-tab="o-Works"> Other Works </button>
                </div>
-               <!-- shipping & logistics application -->
 
-               <!-- Healthcare application -->
-               <div class="card project-card">
-                  
-                  <div class="project-content">
-                     <div class="" style="display: flex; align-items: center; justify-content: space-between;">
-                        <h3>Healthcare Application </h3> 
+               <!-- <div class="nav-center">
+                  <nav class="nav-pills">
+                     <a href="#w-App" class="nav-pill active"> Web Application </a>
+                     <a href="#m-App" class="nav-pill"> Mobile App </a>                        
+                     <a href="#o-Works" class="nav-pill">Other Works</a>
+                  </nav>
+               </div> -->
+               
+
+               <div class="project-panels">
+
+                  <!-- web Application Section -->
+                  <div class="project-panel active" id="w-App">
+                     <!-- shipping & logistics application -->
+                     <div class="card project-card">
+                        <div class="gallery" data-gallery="challenges">
+                           <div class="img-card">
+                              <img src="assets/img/shipping-logistics/sample-1.png" alt="Shipment Preview">
+                           </div>
+                        </div>
+                        <div class="project-content">
+                           <h3>Shipping & Logistics Application Redesign</h3> 
+                           <p class="project-description">Complete platform redesign for Canadian <strong> shipping and logistics </strong> company. Implemented <strong> user-centered design methodology</strong>, rebuilt the entire <strong> UI/UX </strong> from scratch, and significantly improved <strong> experience and performance</strong>.</p>
+                           <div class="tech-stack">
+
+                              <span class="tech-tag"> HTML/CSS </span>
+                              <span class="tech-tag"> Javascript </span>
+                              <span class="tech-tag"> Bootstrap </span>
+                              <span class="tech-tag"> Responsive Design </span>
+                              <span class="tech-tag"> User-Centered-Design </span>
+                              <span class="tech-tag"> UX Research </span>
+                              <span class="tech-tag"> PHP (Laravel) </span>
+                              <span class="tech-tag"> Java </span>
+
+                           </div>
+                           <!-- <button class="btn btn-primary" onclick="openModal('sl-project')">
+                           View Project Details →
+                           </button> -->
+                           <a href="#" class="btn-project btn-shipping" onclick="openModal('sl-project')">
+                              View Project Details 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <path d="M5 12h14M12 5l7 7-7 7"/>
+                              </svg>
+                           </a>
+
+                        </div>
                      </div>
-                     <p class="project-description">As part of this project, I contributed to redesigning and developing a <strong> user-centered, responsive web application</strong>. This project showcased how <strong> modern UI/UX principles and responsive front-end development </strong> can directly support healthcare providers in delivering exceptional care while maintaining operational excellence. </p>
-                     <div class="tech-stack">
-                        <span class="tech-tag"> HTML/CSS </span>
-                        <span class="tech-tag"> Javascript </span>
-                        <span class="tech-tag"> Bootstrap </span>
-                        <span class="tech-tag"> Responsive Design </span>
-                        <span class="tech-tag"> User-Centered-Design </span>
-                        <span class="tech-tag"> UX Research </span>
-                        <span class="tech-tag"> React.js </span>
+                     <!-- shipping & logistics application -->
+
+                     <!-- Healthcare application -->
+                     <div class="card project-card">
+                        
+                        <div class="project-content">
+                           <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                              <h3>Healthcare Application </h3> 
+                           </div>
+                           <p class="project-description">As part of this project, I contributed to redesigning and developing a <strong> user-centered, responsive web application</strong>. This project showcased how <strong> modern UI/UX principles and responsive front-end development </strong> can directly support healthcare providers in delivering exceptional care while maintaining operational excellence. </p>
+                           <div class="tech-stack">
+                              <span class="tech-tag"> HTML/CSS </span>
+                              <span class="tech-tag"> Javascript </span>
+                              <span class="tech-tag"> Bootstrap </span>
+                              <span class="tech-tag"> Responsive Design </span>
+                              <span class="tech-tag"> User-Centered-Design </span>
+                              <span class="tech-tag"> UX Research </span>
+                              <span class="tech-tag"> React.js </span>
+                           </div>
+                           <!-- <button class="btn btn-primary" onclick="openModal('hc-project')">
+                              View Project Details →
+                           </button> -->
+                           <a href="#" class="btn-project btn-healthcare" onclick="openModal('hc-project')">
+                              View Project Details 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <path d="M5 12h14M12 5l7 7-7 7"/>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="gallery" data-gallery="challenges">
+                           <div class="img-card">
+                              <img src="assets/img/healthcare/login.png" alt="Shipment Preview">
+                           </div>
+                        </div>
                      </div>
-                     <button class="btn btn-primary" onclick="openModal('hc-project')">
-                        View Project Details →
-                     </button>
+                     <!-- Healthcare application -->
+
+
+                     <!-- CRM Web App -->
+                     <div class="card project-card">
+                        <div class="gallery" data-gallery="challenges">
+                           <div class="img-card">
+                              <img src="assets/img/crm/main-preview.png" alt="Shipment Preview">
+                           </div>
+                        </div>
+                        <div class="project-content">
+                           <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                              <h3> CRM Application – Shipping & Logistics   </h3> 
+                           </div>
+                           <p class="project-description">Make shipping faster, easier, and more cost-effective for businesses of all sizes. This software streamlines the entire shipping process—from comparing carrier rates to tracking deliveries—so you can focus on growing your business.</p>
+                           <div class="tech-stack">
+                              <span class="tech-tag"> HTML/CSS </span>
+                              <span class="tech-tag"> Javascript </span>
+                              <span class="tech-tag"> Bootstrap </span>
+                              <span class="tech-tag"> Responsive Design </span>
+                              <span class="tech-tag"> User-Centered-Design </span>
+                              <span class="tech-tag"> UX Research </span>
+                              <span class="tech-tag"> React.js </span>
+                           </div>
+                           <!-- <button class="btn btn-primary" onclick="openModal('crm-project')">
+                              View Project Details →
+                           </button> -->
+                           <a href="#" class="btn-project btn-crm" onclick="openModal('crm-project')">
+                              View Project Details 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <path d="M5 12h14M12 5l7 7-7 7"/>
+                              </svg>
+                           </a>
+                        </div>
+                        
+                     </div>
+                     <!-- CRM Web App -->
                   </div>
-                  <div class="gallery" data-gallery="challenges">
-                     <div class="img-card">
-                        <img src="assets/img/healthcare/login.png" alt="Shipment Preview">
+                  <!-- Web Application Section -->
+
+
+                  <!-- mobile Application Section -->
+                  <div class="project-panel" id="m-App">
+                     <!-- CRM Mobile App -->
+                     <div class="card project-card">
+                        <div class="gallery" data-gallery="challenges">
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/thumbnail.png" alt="Shipment Preview">
+                           </div>
+                        </div>
+                        <div class="project-content">
+                           <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                              <h3> CRM Mobile App - Shipping & Logistics   </h3> 
+                           </div>
+                           <p class="project-description">The CRM Mobile App was designed to extend the shipping and logistics platform from web to mobile, ensuring users can manage shipments, carriers, and workflows on the go. The goal was to provide a lightweight, intuitive interface tailored for field agents, delivery partners, and managers who need real-time updates and faster decision-making outside the office.</p>
+                           <div class="tech-stack">
+                              <span class="tech-tag"> Photoshop </span> 
+                              <span class="tech-tag"> User-Centered-Design </span>
+                              <span class="tech-tag"> UX Research </span> 
+                           </div>
+                           <!-- <button class="btn btn-primary" onclick="openModal('crm-project')">
+                              View Project Details →
+                           </button> -->
+                           <a href="#" class="btn-project btn-crm" onclick="openModal('crm-App')">
+                              View Project Details 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <path d="M5 12h14M12 5l7 7-7 7"/>
+                              </svg>
+                           </a>
+                        </div>
+                        
                      </div>
+                     <!-- CRM Mobile App -->
                   </div>
+                  <!-- mobile Application Section -->
+
+                  <!-- other Works & Designs -->
+                  <div class="project-panel" id="o-Works">
+                     <h3> Comming Soon... </h3> 
+                  </div>
+                  <!-- other Works & Designs -->
+
                </div>
-               <!-- Healthcare application -->
-
-
-                <!-- CRM Web App -->
-               <div class="card project-card">
-                  <div class="gallery" data-gallery="challenges">
-                     <div class="img-card">
-                        <img src="assets/img/crm/main-preview.png" alt="Shipment Preview">
-                     </div>
-                  </div>
-                  <div class="project-content">
-                     <div class="" style="display: flex; align-items: center; justify-content: space-between;">
-                        <h3> CRM Application – Shipping & Logistics   </h3> 
-                     </div>
-                     <p class="project-description">Make shipping faster, easier, and more cost-effective for businesses of all sizes. This software streamlines the entire shipping process—from comparing carrier rates to tracking deliveries—so you can focus on growing your business.</p>
-                     <div class="tech-stack">
-                        <span class="tech-tag"> HTML/CSS </span>
-                        <span class="tech-tag"> Javascript </span>
-                        <span class="tech-tag"> Bootstrap </span>
-                        <span class="tech-tag"> Responsive Design </span>
-                        <span class="tech-tag"> User-Centered-Design </span>
-                        <span class="tech-tag"> UX Research </span>
-                        <span class="tech-tag"> React.js </span>
-                     </div>
-                     <button class="btn btn-primary" onclick="openModal('crm-project')">
-                        View Project Details →
-                     </button>
-                  </div>
-                  
-               </div>
-               <!-- Healthcare application -->
 
             </section>
 
@@ -831,10 +922,7 @@
                      </div>
                      <div class="note">
                         Limited or no <strong> carrier API integration </strong> for real-time updates.
-                     </div>
-                     <div class="note">
-                        Missing standardized <strong> invoice PDFs and branded email templates </strong>.
-                     </div>
+                     </div> 
                      <div class="note">
                         Static layouts with no flexibility for dynamic pages <strong>  (rates, shipments, detail views) </strong>.
                      </div>
@@ -858,7 +946,7 @@
                         <p style="margin-bottom: 1rem;"> Our design strategy focused on <strong> usability, automation, and scalability </strong>, ensuring the platform could support both current needs and future enhancements. </p>
                         <div class="notes-container">
                            <div class="note"> Apply <strong> user-centered design principles </strong> to simplify daily workflows. </div>
-                           <div class="note"> Provide flexible <strong> ayouts (list, Kanban, split, and calendar views) for better data visualization </strong>. </div>
+                           <div class="note"> Provide flexible <strong> layouts (list, Kanban, split, and calendar views) for better data visualization </strong>. </div>
                            <div class="note"> Integrate carrier <strong> APIs for real-time shipment and pricing data </strong>. </div>
                            <div class="note"> Automate invoice generation and notifications. </div>
                            <div class="note"> Build <strong>  dynamic pages </strong> configurable per company requirements. </div>
@@ -928,6 +1016,9 @@
                            <div class="img-card">
                               <img src="assets/img/crm/final-2.png" alt="Automated workflows">
                            </div> 
+                           <div class="img-card">
+                              <img src="assets/img/crm/sheets.png" alt="Sheets">
+                           </div>
                         </div>
                         <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;"> 
                            <div class="img-card">
@@ -948,6 +1039,150 @@
                   ← Previous
                   </button>
                   <button class="wizard-btn wizard-btn-next" onclick="nextStep('crm')" id="nextBtn-crm">
+                  Next →
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- shipping logistics Modal -->
+
+
+      <!-- shipping logistics Modal -->
+      <div id="crm-App" class="modal">
+         <div class="modal-content wizard" data-wizard="crmApp">
+            <div class="modal-header">
+               <h2 class="modal-title">
+                  <!-- <span id="currentStep">Step 1</span> of 5: <span id="stepTitle">Project Overview</span> -->
+                  <span id="currentStep-crmApp">Step 1</span> - <span id="stepTitle-crmApp"></span>
+               </h2>
+               <button class="modal-close" onclick="closeModal('crm-App')">&times;</button>
+            </div> 
+            <div class="modal-body" id="wizardSteps-crmApp">
+               <!-- Step 1: Audit -->
+               <div class="modal-section active" data-section="1" data-title="UX Audit / Goals & Design Direction">
+                  <h3>UI & Functionality Audit</h3> 
+                  <div class="notes-container" style="margin-top: 2rem;">
+                     <div class="note">
+                        Existing CRM (web) was powerful but not optimized for mobile-first use.
+                     </div>
+                     <div class="note">
+                        Users reported difficulty accessing shipment data while traveling.
+                     </div>
+                     <div class="note">
+                        Lack of offline capabilities limited flexibility for logistics staff.
+                     </div>
+                     <div class="note">
+                        Needed a simplified version of CRM features for quick actions.
+                     </div>
+                  </div>
+               </div>
+               <!-- Step 2: Goal & Process -->
+               <div class="modal-section" data-section="2" data-title="Deisgns & Improvements">
+                  <h3>Goals & Design Direction</h3> 
+                  <div class="notes-container">
+                     <div class="note">
+                        Consistency: Maintain brand and visual identity from web CRM.
+                     </div>
+                     <div class="note">
+                        Simplicity: Prioritize core tasks like shipment tracking, carrier updates, and invoice status.
+                     </div> 
+                     <div class="note">
+                        Accessibility: Large touch targets, clear icons, and streamlined navigation for mobile use.
+                     </div>
+                     <div class="note">
+                        Scalability: Designed to support future integrations (push notifications, offline mode, GPS tracking).
+                     </div> 
+                  </div>
+                   
+                  
+               </div>
+               <!-- Step 3: Solutions -->
+               <div class="modal-section" data-section="3" data-title="Design Process">
+                   
+                  <div class=" project-card ">
+                     
+                     <div class="project-content">
+                        <h3>High-Fidelity Mock</h3>
+                        <p style="margin-bottom: 1rem;"> Our design strategy focused on <strong> usability, automation, and scalability </strong>, ensuring the platform could support both current needs and future enhancements. </p>
+                        <div class="notes-container">
+                           <div class="note"> Wireframes: Created low-fidelity layouts in PSD to validate user flows. </div>
+                           <div class="note"> High-Fidelity Mockups: Developed clean, modern designs optimized for iOS & Android screens.</div>
+                           <div class="note"> Interactive Elements: Added bottom navigation, cards for shipments, and status badges for quick visibility. </div>
+                           <div class="note"> User-Centered Testing: Reviewed with the dev team and stakeholders to ensure usability and smooth workflows. </div> 
+                        </div>
+                        <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;">
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/hfd-1.jpg" alt="Flexible views">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/hfd-2.jpg" alt="Automated workflows">
+                           </div> 
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/hfd-3.jpg" alt="Sheets">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Step 4: Wireframe -->
+               <div class="modal-section" data-section="4" data-title="Key Results & Impact">
+                  <div class=" project-card ">
+                     <div class="project-content">
+                        <h3> Results & Conclusion </h3>
+                        <div class="notes-container">
+                           <div class="note">
+                              <ul>
+                                 <li> Delivered a mobile-first extension of the CRM system. </li>
+                                 <li> Enabled staff to track shipments, update statuses, and manage carriers in real-time. </li>
+                                 <li> Improved operational efficiency by allowing managers to approve, notify, and monitor shipments remotely. </li>
+                                 <li> Seamlessly aligned with web CRM, ensuring a consistent ecosystem across devices. </li>                              
+                              </ul>   
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project-content" style="width: 100%;">
+                        <h3> My Contribution </h3>
+                        <div class="notes-container">
+                           <div class="note"> Designed mobile app screens in Photoshop (PSD). </div>
+                           <div class="note"> Collaborated with the development team to adapt workflows into mobile-friendly interactions. </strong> </div>
+                           <div class="note"> Delivered scalable, responsive design assets for development. </strong> </div> 
+                        </div>
+                        <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;">
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/final-1.jpg" alt="Login">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/final-2.jpg" alt="Menu Toggle">
+                           </div> 
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/final-3.jpg" alt="Data Listing">
+                           </div>
+                        </div>
+                        <div class="project-card gallery" data-gallery="challenges" style="margin-top: 2rem;"> 
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/final-4.jpg" alt="Rates">
+                           </div>
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/final-5.jpg" alt="Sort">
+                           </div> 
+                           <div class="img-card">
+                              <img src="assets/img/app/crm/final-6.jpg" alt="Timeline">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+                
+                
+            </div>
+            <!-- Wizard Navigation -->
+            <div class="wizard-navigation wizard-footer"> 
+               <div class="wizard-buttons">
+                  <button class="wizard-btn wizard-btn-prev" id="prevBtn-crmApp" onclick="previousStep('crmApp')">
+                  ← Previous
+                  </button>
+                  <button class="wizard-btn wizard-btn-next" onclick="nextStep('crmApp')" id="nextBtn-crmApp">
                   Next →
                   </button>
                </div>
