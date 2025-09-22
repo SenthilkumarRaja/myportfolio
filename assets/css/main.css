@@ -627,19 +627,19 @@ header {
 }
 
 .skill-item {
-    background: rgba(102, 126, 234, 0.1);
+    /* background: rgba(102, 126, 234, 0.1); */
     border: 1px solid rgba(102, 126, 234, 0.2);
     border-radius: 16px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     transition: all 0.3s ease;
 }
 
-.skill-item:hover {
+/* .skill-item:hover {
     background: rgba(102, 126, 234, 0.2);
     transform: translateY(-4px);
     border-color: var(--highlight);
-}
+} */
 
 .skill-icon {
     display: flex;
@@ -654,10 +654,10 @@ header {
     transition: all 0.3s ease;
 }
 
-.skill-item:hover .skill-icon {
+/* .skill-item:hover .skill-icon {
     transform: scale(1.1);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .skill-item h4 {
     color: var(--text-primary);
@@ -1133,10 +1133,10 @@ header {
 
 .profile-photo {
     width: 200px;
-    height: 200px;
+    height: 180px;
     margin: 0 auto 24px;
     border-radius: 20px;
-    background: url(../img/avatar.jpg) top/cover no-repeat;
+    background: url(../img/avatar.png) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1153,7 +1153,7 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--gradient);
+    /* background: var(--gradient); */
     /* purple overlay with 40% opacity */
     mix-blend-mode: multiply;
     /* blends nicely with image */
@@ -1162,16 +1162,16 @@ header {
     /* don’t block interactions */
 }
 
-[data-theme="light"] .profile-photo::after {
+/* [data-theme="light"] .profile-photo::after {
     background: var(--gradient-badge);
-}
+} */
 
 /* Overlay layer */
 .profile-photo::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--gradient);
+    /* background: var(--gradient); */
     /* purple overlay with 40% opacity */
     mix-blend-mode: multiply;
     /* blends nicely with image */
@@ -1354,6 +1354,70 @@ header {
     animation-delay: 0.5s;
 }
 
+/* Hamburger base */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: var(--text-primary);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Animate into X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .nav-center {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .nav-pills {
+    flex-direction: column;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
