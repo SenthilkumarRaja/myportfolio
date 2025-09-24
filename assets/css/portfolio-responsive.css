@@ -1,0 +1,165 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+    .avatar {
+        display: none;
+    }
+    .header-content {
+        flex-direction: row;
+        gap: 12px;
+    }
+    .brand-info .role {
+        font-size: 14px;
+    }
+    .nav-center {
+        position: static;
+        transform: none;
+        order: 2;
+    }
+
+    .theme-toggle {
+        order: 3;
+        align-self: center;
+    }
+
+    .brand {
+        flex-direction: row;
+        text-align: center;
+        gap: 7px;
+        order: 1;
+    }
+
+    .brand-info h1 {
+        font-size: 1.2rem;
+        /* font-weight: bold; */
+    }
+
+    .nav-pills {
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        margin-left: 20px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .before-after-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .modal-header,
+    .modal-body {
+        padding: 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .about-container {
+        flex-direction: column-reverse;
+    }
+    .hero-visual .profile-container { 
+        width: 150px;
+        height: 150px;
+    }
+    .profile {
+        display: flex;
+        justify-content: center;
+    }
+    .profile-sidebar {
+        min-width: 100%;
+    }
+    .contact-info {
+        margin-top: 1rem;
+        margin-left: 30px;
+    }
+}
+
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .profile {flex-direction: column;}
+    .hero-visual .profile-container .profile-image { border-radius: 20px;}
+    .hero-visual .profile-container {
+        width: 120px;
+        height: 120px;
+    }
+    .hero-visual .profile-container .profile-background { 
+        top: 5px;
+        left: 5px; 
+        border-radius: 20px; 
+    }
+    .contact-info {
+        margin-top: 2rem; 
+    }
+}
+
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .nav-center {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    left: 0;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .nav-pills {
+    flex-direction: column;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

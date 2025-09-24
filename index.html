@@ -13,11 +13,13 @@
       <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
       <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
       <link rel="icon" type="image/x-icon" href="favicon.ico">
-      <link href="assets/css/main.css" rel="stylesheet">
+      <link href="assets/css/main.css" rel="stylesheet"> 
+      <link href="assets/css/portfolio-responsive.css" rel="stylesheet">
+      <link href="assets/css/aos-animation.css" rel="stylesheet">
    </head>
    <body>
       <header>
-         <div class="container-fluid">
+         <div class="container-fluid" style="padding: 0 20px;">
             <div class="header-content">
                <div class="brand">
                   <!-- <img src="https://komarev.com/ghpvc/?username=senthilkumarraja&label=Portfolio%20Views&color=blue&style=flat" alt="portfolio views" /> -->
@@ -52,24 +54,24 @@
          </div>
       </header>
       <main class="main-content">
-         <div class="container">
+         <div class="container-fluid">
             <!-- About Section -->
             <section id="about" class="section active">
-               <div class="about-container" style="display: flex; gap: 40px; align-items: flex-start;">
-                  <div class="">
+               <div class="about-container container">
+                  <div class="" data-aos="fade-right" data-aos-delay="200">
                      <div class="section-header">
                         <h2 class="section-title">About Me</h2>
                         <!-- <p class="section-subtitle">Passionate UI Architect with expertise in creating user-centered, accessible, and performant web applications. I specialize in designing and developing modern, responsive web applications with a strong focus on user experience. My approach combines thorough user research, usability testing, and cutting-edge frontend technologies to create solutions that truly meet user needs and business objectives.
                         </p> -->
                         <p class="section-subtitle">
-                           With over a decade of experience in web application design and development, I specialize in creating modern, responsive, and user-friendly digital experiences. As a User Interface Architect at Voyage Software Technologies, I bring a passion for innovation, leveraging tools like Figma and Photoshop to translate concepts into functional designs. Committed to collaboration and efficiency, I aim to enhance user satisfaction while aligning with organizational goals.
+                           With <big> <strong> 10+ </strong></big> years of experience  in web application design and development, I specialize in creating modern, responsive, and user-friendly digital experiences. I bring a passion for innovation, leveraging tools like Figma and Photoshop to translate concepts into functional designs. Committed to collaboration and efficiency, I aim to enhance user satisfaction while aligning with organizational goals.
                         </p> 
                         <p> &nbsp; </p>
                         <p class="section-subtitle">
-                           I have contributed to the success of various projects by designing templates and developing applications with frameworks such as React.js and Bootstrap. My expertise in prototyping and converting designs into pixel-perfect front-end code enables seamless project execution. By prioritizing usability and technical excellence, I support the team in delivering impactful, high-quality web solutions.
+                           I have contributed to the success of various projects by designing templates and developing applications with frameworks such as React.js and Laravel (PHP). My expertise in prototyping and converting designs into pixel-perfect front-end code enables seamless project execution. By prioritizing usability and technical excellence, I support the team in delivering impactful, high-quality web solutions.
                         </p>
-                        <div style="display: flex; flex-direction: row; gap: 12px; margin-top: 1rem;">
-                           <a href="https://www.linkedin.com/in/senthilkumar-raja/" target="_blank" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <div class="social-btn">
+                           <a href="https://www.linkedin.com/in/senthilkumar-raja/" target="_blank" class="btn btn-primary btn-icon" data-aos="fade-up" data-aos-delay="300">
                               <svg width="32px" height="32px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.2"></circle>
                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7747 14.2839C18.7747 15.529 17.8267 16.5366 16.3442 16.5366C14.9194 16.5366 13.9713 15.529 14.0007 14.2839C13.9713 12.9783 14.9193 12 16.3726 12C17.8267 12 18.7463 12.9783 18.7747 14.2839ZM14.1199 32.8191V18.3162H18.6271V32.8181H14.1199V32.8191Z" fill="currentColor"></path>
@@ -77,7 +79,7 @@
                               </svg>
                               LinkedIn Profile
                            </a>
-                           <a href="assets/resume/Senthilkumar_R_Resume.pdf" download="Senthilkumar_R_Resume.pdf" class="btn btn-outline" style="display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none;" target="_blank">
+                           <a href="assets/resume/Senthilkumar_R_Resume.pdf" download="Senthilkumar_R_Resume.pdf" class="btn btn-outline btn-icon" target="_blank" data-aos="fade-up" data-aos-delay="400">
                               <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                  <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -109,134 +111,27 @@
                             </button>
                         </div>
                         </aside> -->
-                     <div class="card" style="flex: 1;">
-                        <h3 style="font-size: 20px; color: var(--text-primary);">Skills Expertise</h3>
-                        <div class="skills-grid">
-                           <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
-                                       <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
-                                       <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>HTML5</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">Semantic Markup, Accessibility</p>
-                           </div>
-                           <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" aria-label="CSS3" role="img" viewBox="0 0 512 512" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52"></path>
-                                       <path fill="#2965f1" d="M256 37V472l149-41 35-394"></path>
-                                       <path fill="#ebebeb" d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"></path>
-                                       <path fill="#ffffff" d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"></path>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>CSS3</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">Animations, Grid, Flexbox</p>
-                           </div>
-                           <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg width="32px" height="32px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <g>
-                                          <path d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z" fill="#563D7C"> </path>
-                                          <path d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z" fill="#FFFFFF"> </path>
-                                       </g>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>Bootstrap</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">Responsive Frameworks</p>
-                           </div>
-                           <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <rect x="2" y="2" width="28" height="28" fill="#FFCA28"></rect>
-                                       <path d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z" fill="#3E3E3E"></path>
-                                       <path d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z" fill="#3E3E3E"></path>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>JavaScript</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">Interactions, Form handling, DOM Manipulation</p>
-                           </div>
-                           <!-- <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z" fill="#53C1DE"></path>
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z" fill="#53C1DE"></path>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>React.js</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">UI-based Development</p>
-                           </div> -->
-                           <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg width="32px" height="32px" viewBox="0 123.30600000000001 595.279 595.279" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <radialGradient id="a" cx="-183.69" cy="328.972" r=".76" gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)" gradientUnits="userSpaceOnUse">
-                                          <stop offset="0" stop-color="#34364e" stop-opacity=".98"></stop>
-                                          <stop offset="1" stop-color="#0c0824"></stop>
-                                       </radialGradient>
-                                       <path d="M24.803 155.549h545.674v530.792H24.803V155.549z" fill="url(#a)"></path>
-                                       <path d="M24.803 155.549h545.674v530.792H24.803V155.549zM0 711.145h595.28V130.746H0v580.399zm401.318-342.287c-19.595 0-26.291 9.921-26.291 18.106 0 8.929 4.464 15.13 30.756 28.772 38.941 18.851 51.095 36.957 51.095 63.497 0 39.685-30.26 61.016-71.186 61.016-21.579 0-40.182-4.465-50.847-10.665-1.736-.744-1.984-1.984-1.984-3.969v-36.461c0-2.48 1.24-3.225 2.977-1.984 15.626 10.17 33.484 14.634 49.854 14.634 19.595 0 27.78-8.185 27.78-19.347 0-8.929-5.705-16.866-30.757-29.764-35.221-16.866-49.854-33.98-49.854-62.504 0-31.997 25.052-58.536 68.457-58.536 21.331 0 36.213 3.225 44.398 6.945 1.984 1.24 2.48 3.224 2.48 4.96v33.98c0 1.984-1.24 3.225-3.721 2.48-10.913-6.943-27.035-11.16-43.157-11.16zm-213.309 29.516c5.705.496 10.17.496 20.091.496 29.021 0 56.304-10.169 56.304-49.606 0-31.5-19.595-47.375-52.583-47.375-9.921 0-19.347.496-23.812.744v95.741zM143.86 266.668c0-1.736 3.473-2.977 5.456-2.977 15.875-.744 39.438-1.24 63.993-1.24 68.705 0 95.492 37.701 95.492 85.82 0 63-45.638 90.036-101.693 90.036-9.425 0-12.649-.496-19.347-.496v95.245c0 1.984-.744 2.976-2.976 2.976h-37.949c-1.984 0-2.977-.744-2.977-2.976V266.668z" fill="#31c5f0"></path>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>Photoshop</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">Design, Mockups</p>
-                           </div>
-                           <div class="skill-item">
-                              <div class="skill-icon">
-                                 <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16C16 13.7909 17.7909 12 20 12C22.2091 12 24 13.7909 24 16C24 18.2091 22.2091 20 20 20C17.7909 20 16 18.2091 16 16Z" fill="#1ABCFE"></path>
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M8 24C8 21.7909 9.79086 20 12 20H16V24C16 26.2091 14.2091 28 12 28C9.79086 28 8 26.2091 8 24Z" fill="#0ACF83"></path>
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4V12H20C22.2091 12 24 10.2091 24 8C24 5.79086 22.2091 4 20 4H16Z" fill="#FF7262"></path>
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C8 10.2091 9.79086 12 12 12H16V4H12C9.79086 4 8 5.79086 8 8Z" fill="#F24E1E"></path>
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C8 18.2091 9.79086 20 12 20H16V12H12C9.79086 12 8 13.7909 8 16Z" fill="#A259FF"></path>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <h4>Figma</h4>
-                              <p style="color: var(--text-muted); font-size: 14px;">Flow, Prototyping</p>
-                           </div>
-                        </div>
-                     </div>
+                     
                   </div>
-                  <aside class="profile-sidebar" style="min-width: 320px; flex-shrink: 0;">
-                     <div class="profile" style="text-align: center;">
+                  <aside class="profile-sidebar">
+                     <div class="profile">
                         <!-- Profile Photo Placeholder -->
-                        <div class="profile-photo">
+                        <!-- <div class="profile-photo">
                            <span>SK</span>
+                        </div> -->
+
+                        <div class="hero-visual" data-aos="fade-left" data-aos-delay="100">
+                           <div class="profile-container">
+                              <div class="profile-background"></div>
+                              <img src="assets/img/avatar.png" alt="Alexander Chen" class="profile-image">
+                           </div>
                         </div>
+
                         <!-- Name & Title -->
                         <!-- Contact Information -->
-                        <div style="text-align: left; margin-bottom: 32px; margin-left: 60px;">
-                           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
-                              <div class="skill-icon" style="margin: 0; width: 40px; height: 40px;">
+                        <div class="contact-info">
+                           <div class="contact-icon" data-aos="fade-right" data-aos-delay="200">
+                              <div class="skill-icon">
                                  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -255,8 +150,8 @@
                                  <div style="color: var(--text-primary); font-size: 13px; font-weight: 500;">kumar24486@gmail.com</div>
                               </div>
                            </div>
-                           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
-                              <div class="skill-icon" style="margin: 0; width: 40px; height: 40px;">
+                           <div class="contact-icon" data-aos="fade-right" data-aos-delay="300">
+                              <div class="skill-icon">
                                  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -270,8 +165,8 @@
                                  <div style="color: var(--text-primary); font-size: 13px; font-weight: 500;">+91-9944914676</div>
                               </div>
                            </div>
-                           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
-                              <div class="skill-icon" style="margin: 0; width: 40px; height: 40px;">
+                           <div class="contact-icon" data-aos="fade-right" data-aos-delay="400">
+                              <div class="skill-icon">
                                  <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -314,6 +209,125 @@
                      </div>
                   </aside>
                </div>
+
+               <div class="container">
+                  <div class="card" style="flex: 1;">
+                     <h3 style="font-size: 20px; color: var(--text-primary);">Skills Expertise</h3>
+                     <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                           <div class="skill-icon">
+                              <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                                    <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                                    <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>HTML5</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">Semantic UI, Accessibility</p>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                           <div class="skill-icon">
+                              <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" aria-label="CSS3" role="img" viewBox="0 0 512 512" fill="#000000">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52"></path>
+                                    <path fill="#2965f1" d="M256 37V472l149-41 35-394"></path>
+                                    <path fill="#ebebeb" d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"></path>
+                                    <path fill="#ffffff" d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>CSS3</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">Animations, Flexbox / Grid</p>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                           <div class="skill-icon">
+                              <svg width="32px" height="32px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                       <path d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z" fill="#563D7C"> </path>
+                                       <path d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z" fill="#FFFFFF"> </path>
+                                    </g>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>Bootstrap</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">Responsive Frameworks</p>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                           <div class="skill-icon">
+                              <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <rect x="2" y="2" width="28" height="28" fill="#FFCA28"></rect>
+                                    <path d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z" fill="#3E3E3E"></path>
+                                    <path d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z" fill="#3E3E3E"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>JavaScript</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">Interactions, Form handling</p>
+                        </div>
+                        <!-- <div class="skill-item">
+                           <div class="skill-icon">
+                              <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z" fill="#53C1DE"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z" fill="#53C1DE"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>React.js</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">UI-based Development</p>
+                        </div> -->
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                           <div class="skill-icon">
+                              <svg width="32px" height="32px" viewBox="0 123.30600000000001 595.279 595.279" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <radialGradient id="a" cx="-183.69" cy="328.972" r=".76" gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)" gradientUnits="userSpaceOnUse">
+                                       <stop offset="0" stop-color="#34364e" stop-opacity=".98"></stop>
+                                       <stop offset="1" stop-color="#0c0824"></stop>
+                                    </radialGradient>
+                                    <path d="M24.803 155.549h545.674v530.792H24.803V155.549z" fill="url(#a)"></path>
+                                    <path d="M24.803 155.549h545.674v530.792H24.803V155.549zM0 711.145h595.28V130.746H0v580.399zm401.318-342.287c-19.595 0-26.291 9.921-26.291 18.106 0 8.929 4.464 15.13 30.756 28.772 38.941 18.851 51.095 36.957 51.095 63.497 0 39.685-30.26 61.016-71.186 61.016-21.579 0-40.182-4.465-50.847-10.665-1.736-.744-1.984-1.984-1.984-3.969v-36.461c0-2.48 1.24-3.225 2.977-1.984 15.626 10.17 33.484 14.634 49.854 14.634 19.595 0 27.78-8.185 27.78-19.347 0-8.929-5.705-16.866-30.757-29.764-35.221-16.866-49.854-33.98-49.854-62.504 0-31.997 25.052-58.536 68.457-58.536 21.331 0 36.213 3.225 44.398 6.945 1.984 1.24 2.48 3.224 2.48 4.96v33.98c0 1.984-1.24 3.225-3.721 2.48-10.913-6.943-27.035-11.16-43.157-11.16zm-213.309 29.516c5.705.496 10.17.496 20.091.496 29.021 0 56.304-10.169 56.304-49.606 0-31.5-19.595-47.375-52.583-47.375-9.921 0-19.347.496-23.812.744v95.741zM143.86 266.668c0-1.736 3.473-2.977 5.456-2.977 15.875-.744 39.438-1.24 63.993-1.24 68.705 0 95.492 37.701 95.492 85.82 0 63-45.638 90.036-101.693 90.036-9.425 0-12.649-.496-19.347-.496v95.245c0 1.984-.744 2.976-2.976 2.976h-37.949c-1.984 0-2.977-.744-2.977-2.976V266.668z" fill="#31c5f0"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>Photoshop</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">Design, Mockups</p>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                           <div class="skill-icon">
+                              <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16C16 13.7909 17.7909 12 20 12C22.2091 12 24 13.7909 24 16C24 18.2091 22.2091 20 20 20C17.7909 20 16 18.2091 16 16Z" fill="#1ABCFE"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 24C8 21.7909 9.79086 20 12 20H16V24C16 26.2091 14.2091 28 12 28C9.79086 28 8 26.2091 8 24Z" fill="#0ACF83"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4V12H20C22.2091 12 24 10.2091 24 8C24 5.79086 22.2091 4 20 4H16Z" fill="#FF7262"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C8 10.2091 9.79086 12 12 12H16V4H12C9.79086 4 8 5.79086 8 8Z" fill="#F24E1E"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C8 18.2091 9.79086 20 12 20H16V12H12C9.79086 12 8 13.7909 8 16Z" fill="#A259FF"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                           <h4>Figma</h4>
+                           <p style="color: var(--text-muted); font-size: 14px;">Flow, Prototyping</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </section>
 
 
@@ -322,189 +336,190 @@
             
             <section id="projects" class="section">
                
-               <div class="section-header">
-                  <h2 class="section-title">Featured Projects</h2>
-                  <p class="section-subtitle">Showcasing end-to-end UI/UX work from concept to implementation, demonstrating expertise in user-centered design and modern web technologies.</p>
-               </div>
-
-
-
-               <div class="tabs">
-                  <button class="tab-btn active" data-tab="w-App"> Web Application </button>
-                  <button class="tab-btn" data-tab="m-App"> Mobile App </button>
-                  <!-- <button class="tab-btn" data-tab="o-Works"> Other Works </button> -->
-               </div>
-
-               <!-- <div class="nav-center">
-                  <nav class="nav-pills">
-                     <a href="#w-App" class="nav-pill active"> Web Application </a>
-                     <a href="#m-App" class="nav-pill"> Mobile App </a>                        
-                     <a href="#o-Works" class="nav-pill">Other Works</a>
-                  </nav>
-               </div> -->
-               
-
-               <div class="project-panels">
-
-                  <!-- web Application Section -->
-                  <div class="project-panel active" id="w-App">
-                     <!-- shipping & logistics application -->
-                     <div class="card project-card">
-                        <div class="gallery" data-gallery="challenges">
-                           <div class="img-card">
-                              <img src="assets/img/shipping-logistics/sample-1.png" alt="Shipment Preview">
-                           </div>
-                        </div>
-                        <div class="project-content">
-                           <h3>Shipping & Logistics Application Redesign</h3> 
-                           <p class="project-description">Complete platform redesign for Canadian <strong> shipping and logistics </strong> company. Implemented <strong> user-centered design methodology</strong>, rebuilt the entire <strong> UI/UX </strong> from scratch, and significantly improved <strong> experience and performance</strong>.</p>
-                           <div class="tech-stack">
-
-                              <span class="tech-tag"> HTML/CSS </span>
-                              <span class="tech-tag"> Javascript </span>
-                              <span class="tech-tag"> Bootstrap </span>
-                              <span class="tech-tag"> Responsive Design </span>
-                              <span class="tech-tag"> User-Centered-Design </span>
-                              <span class="tech-tag"> UX Research </span>
-                              <span class="tech-tag"> PHP (Laravel) </span>
-                              <span class="tech-tag"> Java </span>
-
-                           </div>
-                           <!-- <button class="btn btn-primary" onclick="openModal('sl-project')">
-                           View Project Details →
-                           </button> -->
-                           <a href="#" class="btn-project btn-shipping" onclick="openModal('sl-project')">
-                              View Project Details 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                 <path d="M5 12h14M12 5l7 7-7 7"/>
-                              </svg>
-                           </a>
-
-                        </div>
-                     </div>
-                     <!-- shipping & logistics application -->
-
-                     <!-- Healthcare application -->
-                     <div class="card project-card">
-                        
-                        <div class="project-content">
-                           <div class="" style="display: flex; align-items: center; justify-content: space-between;">
-                              <h3>Healthcare Application </h3> 
-                           </div>
-                           <p class="project-description">As part of this project, I contributed to redesigning and developing a <strong> user-centered, responsive web application</strong>. This project showcased how <strong> modern UI/UX principles and responsive front-end development </strong> can directly support healthcare providers in delivering exceptional care while maintaining operational excellence. </p>
-                           <div class="tech-stack">
-                              <span class="tech-tag"> HTML/CSS </span>
-                              <span class="tech-tag"> Javascript </span>
-                              <span class="tech-tag"> Bootstrap </span>
-                              <span class="tech-tag"> Responsive Design </span>
-                              <span class="tech-tag"> User-Centered-Design </span>
-                              <span class="tech-tag"> UX Research </span>
-                              <span class="tech-tag"> React.js </span>
-                           </div>
-                           <!-- <button class="btn btn-primary" onclick="openModal('hc-project')">
-                              View Project Details →
-                           </button> -->
-                           <a href="#" class="btn-project btn-healthcare" onclick="openModal('hc-project')">
-                              View Project Details 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                 <path d="M5 12h14M12 5l7 7-7 7"/>
-                              </svg>
-                           </a>
-                        </div>
-                        <div class="gallery" data-gallery="challenges">
-                           <div class="img-card">
-                              <img src="assets/img/healthcare/login.png" alt="Shipment Preview">
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Healthcare application -->
-
-
-                     <!-- CRM Web App -->
-                     <div class="card project-card">
-                        <div class="gallery" data-gallery="challenges">
-                           <div class="img-card">
-                              <img src="assets/img/crm/main-preview.png" alt="Shipment Preview">
-                           </div>
-                        </div>
-                        <div class="project-content">
-                           <div class="" style="display: flex; align-items: center; justify-content: space-between;">
-                              <h3> CRM Application – Shipping & Logistics   </h3> 
-                           </div>
-                           <p class="project-description">Make shipping faster, easier, and more cost-effective for businesses of all sizes. This software streamlines the entire shipping process—from comparing carrier rates to tracking deliveries—so you can focus on growing your business.</p>
-                           <div class="tech-stack">
-                              <span class="tech-tag"> HTML/CSS </span>
-                              <span class="tech-tag"> Javascript </span>
-                              <span class="tech-tag"> Bootstrap </span>
-                              <span class="tech-tag"> Responsive Design </span>
-                              <span class="tech-tag"> User-Centered-Design </span>
-                              <span class="tech-tag"> UX Research </span>
-                              <span class="tech-tag"> React.js </span>
-                           </div>
-                           <!-- <button class="btn btn-primary" onclick="openModal('crm-project')">
-                              View Project Details →
-                           </button> -->
-                           <a href="#" class="btn-project btn-crm" onclick="openModal('crm-project')">
-                              View Project Details 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                 <path d="M5 12h14M12 5l7 7-7 7"/>
-                              </svg>
-                           </a>
-                        </div>
-                        
-                     </div>
-                     <!-- CRM Web App -->
+               <div class="container">
+                  <div class="section-header">
+                     <h2 class="section-title">Featured Projects</h2>
+                     <p class="section-subtitle">Showcasing end-to-end UI/UX work from concept to implementation, demonstrating expertise in user-centered design and modern web technologies.</p>
                   </div>
-                  <!-- Web Application Section -->
 
 
-                  <!-- mobile Application Section -->
-                  <div class="project-panel" id="m-App">
-                     <!-- CRM Mobile App -->
-                     <div class="card project-card">
-                        <div class="gallery" data-gallery="challenges">
-                           <div class="img-card">
-                              <img src="assets/img/app/crm/thumbnail.png" alt="Shipment Preview">
+
+                  <div class="tabs">
+                     <button class="tab-btn active" data-tab="w-App"> Web Application </button>
+                     <button class="tab-btn" data-tab="m-App"> Mobile App </button>
+                     <!-- <button class="tab-btn" data-tab="o-Works"> Other Works </button> -->
+                  </div>
+
+                  <!-- <div class="nav-center">
+                     <nav class="nav-pills">
+                        <a href="#w-App" class="nav-pill active"> Web Application </a>
+                        <a href="#m-App" class="nav-pill"> Mobile App </a>                        
+                        <a href="#o-Works" class="nav-pill">Other Works</a>
+                     </nav>
+                  </div> -->
+                  
+
+                  <div class="project-panels">
+
+                     <!-- web Application Section -->
+                     <div class="project-panel active" id="w-App">
+                        <!-- shipping & logistics application -->
+                        <div class="card project-card">
+                           <div class="gallery" data-gallery="challenges" data-aos="fade-right" data-aos-delay="100">
+                              <div class="img-card">
+                                 <img src="assets/img/shipping-logistics/sample-1.png" alt="Shipment Preview">
+                              </div>
                            </div>
-                        </div>
-                        <div class="project-content">
-                           <div class="" style="display: flex; align-items: center; justify-content: space-between;">
-                              <h3> CRM Mobile App - Shipping & Logistics   </h3> 
-                           </div>
-                           <p class="project-description">The CRM Mobile App was designed to extend the shipping and logistics platform from <strong>  web to mobile</strong>, ensuring users can manage <strong> shipments, carriers, and workflows </strong> on the go. The goal was to provide a lightweight, intuitive interface tailored for <strong> field agents, delivery partners, and managers </strong> who need real-time updates and faster decision-making outside the office.</p>
-                           <div class="tech-stack">
-                              <span class="tech-tag"> Photoshop </span> 
-                              <span class="tech-tag"> User-Centered-Design </span>
-                              <span class="tech-tag"> UX Research </span> 
-                           </div>
-                           <!-- <button class="btn btn-primary" onclick="openModal('crm-project')">
+                           <div class="project-content" data-aos="fade-left" data-aos-delay="100">
+                              <h3>Shipping & Logistics Application Redesign</h3> 
+                              <p class="project-description">Complete platform redesign for Canadian <strong> shipping and logistics </strong> company. Implemented <strong> user-centered design methodology</strong>, rebuilt the entire <strong> UI/UX </strong> from scratch, and significantly improved <strong> experience and performance</strong>.</p>
+                              <div class="tech-stack">
+
+                                 <span class="tech-tag"> HTML/CSS </span>
+                                 <span class="tech-tag"> Javascript </span>
+                                 <span class="tech-tag"> Bootstrap </span>
+                                 <span class="tech-tag"> Responsive Design </span>
+                                 <span class="tech-tag"> User-Centered-Design </span>
+                                 <span class="tech-tag"> UX Research </span>
+                                 <span class="tech-tag"> PHP (Laravel) </span>
+                                 <span class="tech-tag"> Java </span>
+
+                              </div>
+                              <!-- <button class="btn btn-primary" onclick="openModal('sl-project')">
                               View Project Details →
-                           </button> -->
-                           <a href="#" class="btn-project btn-crm" onclick="openModal('crm-App')">
-                              View Project Details 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                 <path d="M5 12h14M12 5l7 7-7 7"/>
-                              </svg>
-                           </a>
+                              </button> -->
+                              <a href="#" class="btn-project btn-shipping" onclick="openModal('sl-project')" data-aos="fade-up" data-aos-delay="300">
+                                 View Project Details 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                 </svg>
+                              </a>
+
+                           </div>
                         </div>
-                        
+                        <!-- shipping & logistics application -->
+
+                        <!-- Healthcare application -->
+                        <div class="card project-card">
+                           
+                           <div class="project-content" data-aos="fade-right" data-aos-delay="100">
+                              <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                                 <h3>Healthcare Application </h3> 
+                              </div>
+                              <p class="project-description">As part of this project, I contributed to redesigning and developing a <strong> user-centered, responsive web application</strong>. This project showcased how <strong> modern UI/UX principles and responsive front-end development </strong> can directly support healthcare providers in delivering exceptional care while maintaining operational excellence. </p>
+                              <div class="tech-stack">
+                                 <span class="tech-tag"> HTML/CSS </span>
+                                 <span class="tech-tag"> Javascript </span>
+                                 <span class="tech-tag"> Bootstrap </span>
+                                 <span class="tech-tag"> Responsive Design </span>
+                                 <span class="tech-tag"> User-Centered-Design </span>
+                                 <span class="tech-tag"> UX Research </span>
+                                 <span class="tech-tag"> React.js </span>
+                              </div>
+                              <!-- <button class="btn btn-primary" onclick="openModal('hc-project')">
+                                 View Project Details →
+                              </button> -->
+                              <a href="#" class="btn-project btn-healthcare" onclick="openModal('hc-project')" data-aos="fade-up" data-aos-delay="300">
+                                 View Project Details 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="gallery" data-gallery="challenges" data-aos="fade-left" data-aos-delay="100">
+                              <div class="img-card">
+                                 <img src="assets/img/healthcare/login.png" alt="Shipment Preview">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Healthcare application -->
+
+
+                        <!-- CRM Web App -->
+                        <div class="card project-card">
+                           <div class="gallery" data-gallery="challenges" data-aos="fade-right" data-aos-delay="100">
+                              <div class="img-card">
+                                 <img src="assets/img/crm/main-preview.png" alt="Shipment Preview">
+                              </div>
+                           </div>
+                           <div class="project-content" data-aos="fade-left" data-aos-delay="100">
+                              <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                                 <h3> CRM Application – Shipping & Logistics   </h3> 
+                              </div>
+                              <p class="project-description">Make shipping faster, easier, and more cost-effective for businesses of all sizes. This software streamlines the entire shipping process—from comparing carrier rates to tracking deliveries—so you can focus on growing your business.</p>
+                              <div class="tech-stack">
+                                 <span class="tech-tag"> HTML/CSS </span>
+                                 <span class="tech-tag"> Javascript </span>
+                                 <span class="tech-tag"> Bootstrap </span>
+                                 <span class="tech-tag"> Responsive Design </span>
+                                 <span class="tech-tag"> User-Centered-Design </span>
+                                 <span class="tech-tag"> UX Research </span>
+                                 <span class="tech-tag"> React.js </span>
+                              </div>
+                              <!-- <button class="btn btn-primary" onclick="openModal('crm-project')">
+                                 View Project Details →
+                              </button> -->
+                              <a href="#" class="btn-project btn-crm" onclick="openModal('crm-project')" data-aos="fade-up" data-aos-delay="300">
+                                 View Project Details 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                 </svg>
+                              </a>
+                           </div>
+                           
+                        </div>
+                        <!-- CRM Web App -->
                      </div>
-                     <!-- CRM Mobile App -->
-                  </div>
-                  <!-- mobile Application Section -->
+                     <!-- Web Application Section -->
 
-                  <!-- other Works & Designs -->
-                  <div class="project-panel" id="o-Works">
-                     <h3> Comming Soon... </h3> 
-                  </div>
-                  <!-- other Works & Designs -->
 
+                     <!-- mobile Application Section -->
+                     <div class="project-panel" id="m-App">
+                        <!-- CRM Mobile App -->
+                        <div class="card project-card">
+                           <div class="gallery" data-gallery="challenges" data-aos="fade-left" data-aos-delay="100">
+                              <div class="img-card">
+                                 <img src="assets/img/app/crm/thumbnail.png" alt="Shipment Preview">
+                              </div>
+                           </div>
+                           <div class="project-content" data-aos="fade-right" data-aos-delay="100">
+                              <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                                 <h3> CRM Mobile App - Shipping & Logistics   </h3> 
+                              </div>
+                              <p class="project-description">The CRM Mobile App was designed to extend the shipping and logistics platform from <strong>  web to mobile</strong>, ensuring users can manage <strong> shipments, carriers, and workflows </strong> on the go. The goal was to provide a lightweight, intuitive interface tailored for <strong> field agents, delivery partners, and managers </strong> who need real-time updates and faster decision-making outside the office.</p>
+                              <div class="tech-stack">
+                                 <span class="tech-tag"> Photoshop </span> 
+                                 <span class="tech-tag"> User-Centered-Design </span>
+                                 <span class="tech-tag"> UX Research </span> 
+                              </div>
+                              <!-- <button class="btn btn-primary" onclick="openModal('crm-project')">
+                                 View Project Details →
+                              </button> -->
+                              <a href="#" class="btn-project btn-crm" onclick="openModal('crm-App')" data-aos="fade-up" data-aos-delay="300">
+                                 View Project Details 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" 
+                                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                 </svg>
+                              </a>
+                           </div>
+                           
+                        </div>
+                        <!-- CRM Mobile App -->
+                     </div>
+                     <!-- mobile Application Section -->
+
+                     <!-- other Works & Designs -->
+                     <div class="project-panel" id="o-Works">
+                        <h3> Comming Soon... </h3> 
+                     </div>
+                     <!-- other Works & Designs -->
+
+                  </div>
                </div>
-
             </section>
 
             <!-- Projects Section -->
@@ -512,79 +527,81 @@
 
             <!-- Experience Section -->
             <section id="experience" class="section">
-               <div class="section-header">
-                  <h2 class="section-title">Professional Experience</h2>
-                  <p class="section-subtitle">Over 14+ years of experience in UI/UX design and frontend development across various industries.</p>
-               </div>
-               <div class="timeline">
-                  <div class="timeline-item">
-                     <div class="timeline-header">
-                        <div>
-                           <h3 class="timeline-title">UI Architect</h3>
-                           <div class="timeline-company">Voyage Software Technologies Pvt Ltd, Chennai</div>
-                        </div>
-                        <span class="timeline-duration">Sep 2015 - Present (9+ Years)</span>
-                     </div>
-                     <p class="timeline-description">
-                        <!-- Leading UI/UX initiatives for complex web applications. Designed and developed modern, responsive interfaces ensuring optimal user experience. Created comprehensive design systems in Photoshop and Figma, then converted them into pixel-perfect, accessible HTML5/CSS3/JavaScript implementations. Leveraged Bootstrap and React.js frameworks to enhance development efficiency and maintainability. -->
-                     <ul class="styled-list">
-                        <!-- <li class="fade-item">Led UI/UX initiatives for complex web applications, focusing on usability and accessibility. </li>
-                        <li class="fade-item">Designed and developed modern, responsive interfaces to ensure optimal user experience. </li>
-                        <li class="fade-item">Built comprehensive design systems in Photoshop and Figma for scalable design consistency. </li>
-                        <li class="fade-item">Converted prototypes into pixel-perfect HTML5, CSS3, and JavaScript implementations. </li>
-                        <li class="fade-item">Utilized Bootstrap for rapid UI development and React.js for dynamic, maintainable components. </li> -->
-                        <li class="fade-item">
-                           Converted Figma/PSD designs into pixel-perfect, responsive UI using HTML5/ CSS3/ Bootstrap/JavaScript.
-                        </li>
-                        <li class="fade-item">
-                           Built reusable UI components, forms, tables, and dashboards with modular CSS and mobile-first patterns.
-                        </li>
-                        <li class="fade-item">
-                           Collaborated with designers & back-end devs to integrate REST endpoints and handle edge cases & validation.
-                        </li>
-                     </ul>
-                     </p>
+               <div class="container">
+                  <div class="section-header">
+                     <h2 class="section-title">Professional Experience</h2>
+                     <p class="section-subtitle">Over 14+ years of experience in UI/UX design and frontend development across various industries.</p>
                   </div>
-                  <div class="timeline-item">
-                     <div class="timeline-header">
-                        <div>
-                           <h3 class="timeline-title">Mentor</h3>
-                           <div class="timeline-company">Concentrix Technologies India Pvt Ltd, Chennai</div>
+                  <div class="timeline">
+                     <div class="timeline-item">
+                        <div class="timeline-header">
+                           <div>
+                              <h3 class="timeline-title">UI Architect</h3>
+                              <div class="timeline-company">Voyage Software Technologies Pvt Ltd, Chennai</div>
+                           </div>
+                           <span class="timeline-duration">Sep 2015 - Present (9+ Years)</span>
                         </div>
-                        <span class="timeline-duration">Mar 2011 - Sep 2015 (4.5 Years)</span>
-                     </div>
-                     <p class="timeline-description">
-                         
+                        <p class="timeline-description">
+                           <!-- Leading UI/UX initiatives for complex web applications. Designed and developed modern, responsive interfaces ensuring optimal user experience. Created comprehensive design systems in Photoshop and Figma, then converted them into pixel-perfect, accessible HTML5/CSS3/JavaScript implementations. Leveraged Bootstrap and React.js frameworks to enhance development efficiency and maintainability. -->
                         <ul class="styled-list">
-                           <!-- <li class="fade-item">Contributed to CareerBuilder's major domain initiatives by designing and managing custom job posting templates. </li>
+                           <!-- <li class="fade-item">Led UI/UX initiatives for complex web applications, focusing on usability and accessibility. </li>
                            <li class="fade-item">Designed and developed modern, responsive interfaces to ensure optimal user experience. </li>
-                           <li class="fade-item">Provided comprehensive mentorship to new team members during onboarding processes. </li>
-                           <li class="fade-item">Created engaging graphics and visual content using professional design tools. </li>
-                           <li class="fade-item">Integrated HTML, CSS, JavaScript, and other technologies into the portal for enhanced branding templates. </li> -->
+                           <li class="fade-item">Built comprehensive design systems in Photoshop and Figma for scalable design consistency. </li>
+                           <li class="fade-item">Converted prototypes into pixel-perfect HTML5, CSS3, and JavaScript implementations. </li>
+                           <li class="fade-item">Utilized Bootstrap for rapid UI development and React.js for dynamic, maintainable components. </li> -->
                            <li class="fade-item">
-                              Designed/maintained branding templates (jobposting/marketing) using HTML / CSS / JavaScript for a large recruiting domain.
+                              Converted Figma/PSD designs into pixel-perfect, responsive UI using HTML5/ CSS3/ Bootstrap/JavaScript.
                            </li>
                            <li class="fade-item">
-                              Mentored new joiners on web standards, accessibility mindset, and template customization.
+                              Built reusable UI components, forms, tables, and dashboards with modular CSS and mobile-first patterns.
+                           </li>
+                           <li class="fade-item">
+                              Collaborated with designers & back-end devs to integrate REST endpoints and handle edge cases & validation.
                            </li>
                         </ul>
-                     </p>
-                  </div>
-                  <div class="timeline-item">
-                     <div class="timeline-header">
-                        <div>
-                           <h3 class="timeline-title">Web Designer</h3>
-                           <div class="timeline-company">OG Software Solutions, Chennai</div>
-                        </div>
-                        <span class="timeline-duration">Feb 2010 - Mar 2011 (1 Year)</span>
+                        </p>
                      </div>
-                     <p class="timeline-description">
-                        <ul class="styled-list"> 
-                           <li class="fade-item">Designed comprehensive PSD templates and converted them into HTML/CSS layouts using both table-based and modern div-based structures. </li>
-                           <li class="fade-item">Contributed to custom website development and ongoing maintenance for both product and service-based companies. </li> 
-                        </ul>
-                          
-                     </p>
+                     <div class="timeline-item">
+                        <div class="timeline-header">
+                           <div>
+                              <h3 class="timeline-title">Mentor</h3>
+                              <div class="timeline-company">Concentrix Technologies India Pvt Ltd, Chennai</div>
+                           </div>
+                           <span class="timeline-duration">Mar 2011 - Sep 2015 (4.5 Years)</span>
+                        </div>
+                        <p class="timeline-description">
+                           
+                           <ul class="styled-list">
+                              <!-- <li class="fade-item">Contributed to CareerBuilder's major domain initiatives by designing and managing custom job posting templates. </li>
+                              <li class="fade-item">Designed and developed modern, responsive interfaces to ensure optimal user experience. </li>
+                              <li class="fade-item">Provided comprehensive mentorship to new team members during onboarding processes. </li>
+                              <li class="fade-item">Created engaging graphics and visual content using professional design tools. </li>
+                              <li class="fade-item">Integrated HTML, CSS, JavaScript, and other technologies into the portal for enhanced branding templates. </li> -->
+                              <li class="fade-item">
+                                 Designed/maintained branding templates (jobposting/marketing) using HTML / CSS / JavaScript for a large recruiting domain.
+                              </li>
+                              <li class="fade-item">
+                                 Mentored new joiners on web standards, accessibility mindset, and template customization.
+                              </li>
+                           </ul>
+                        </p>
+                     </div>
+                     <div class="timeline-item">
+                        <div class="timeline-header">
+                           <div>
+                              <h3 class="timeline-title">Web Designer</h3>
+                              <div class="timeline-company">OG Software Solutions, Chennai</div>
+                           </div>
+                           <span class="timeline-duration">Feb 2010 - Mar 2011 (1 Year)</span>
+                        </div>
+                        <p class="timeline-description">
+                           <ul class="styled-list"> 
+                              <li class="fade-item">Designed comprehensive PSD templates and converted them into HTML/CSS layouts using both table-based and modern div-based structures. </li>
+                              <li class="fade-item">Contributed to custom website development and ongoing maintenance for both product and service-based companies. </li> 
+                           </ul>
+                           
+                        </p>
+                     </div>
                   </div>
                </div>
             </section>
@@ -1225,10 +1242,13 @@
          <span class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</span>
       </div>
       <!-- Lightbox Modal -->
+      
+      <!-- Scroll to Top Button -->
+      <button id="scrollTopBtn" title="Go to top">↑</button>
 
       <script type="text/javascript" src="https://bootstrapmade.com/content/vendors/typed.js/typed.umd.js"></script> 
       <script type="text/javascript" src="assets/js/portfolio-wizard.js"></script>
       <script type="text/javascript" src="assets/js/portfolio-main.js"></script>
- 
+      <script type="text/javascript" src="assets/js/aos-animation.js"></script>
    </body>
 </html>
